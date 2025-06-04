@@ -1,17 +1,22 @@
-import javax.swing.*;
-
 public class Main {
     public static void main(String[] args) {
-        int number = 1;
+        int age = 24;
+        boolean hasID = true;
 
-        if (number > 0) {
-            System.out.println("number는 양수입니다.");
+        if (age >= 20 && hasID) {
+            System.out.println("접속가능.");
         }
 
-        else if (number < 0) {
-            System.out.println("number는 음수입니다.");}
+        boolean isWeekend = false;
+        boolean isHolyday = true;
 
-        else {
-                System.out.println("nember는 0입니다.");}
+        if (isWeekend || isHolyday) {
+            System.out.println("쉴 수 있습니다.");
+        }
+
+        boolean isRaining = false;
+        if (!isRaining) {
+            System.out.println("그냥 나가.");
+        }
     }
 }
