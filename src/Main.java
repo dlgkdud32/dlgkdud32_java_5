@@ -1,10 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        int i = 0;
+        boolean a = false;
 
-        while (i < 5) {
-            System.out.println(i);
-            i++;
+        while (a) {
+            System.out.println("무한 루프");
         }
+
+        do {
+            System.out.println("무한 루프");
+        } while (a);
     }
 }
