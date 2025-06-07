@@ -1,13 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        boolean a = false;
+        boolean a = true;
+        int b = 1;
 
         while (a) {
-            System.out.println("무한 루프");
-        }
+            System.out.println(b);
+            b++;
 
-        do {
-            System.out.println("무한 루프");
-        } while (a);
+            if (b > 10000) {
+                a = false;
+            }
+        }
     }
 }
