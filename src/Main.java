@@ -1,15 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        boolean a = true;
-        int b = 1;
 
-        while (a) {
-            System.out.println(b);
-            b++;
+        int number = 540;
 
-            if (b > 10000) {
-                a = false;
-            }
-        }
+        String hexString = Integer.toHexString(number);
+
+        System.out.println("Hex: " +hexString);
     }
 }
